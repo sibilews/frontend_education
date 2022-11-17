@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя первая страница</title>
+    <style>
+    body{
+        background-image:linear-gradient(90deg, rgba(255, 251, 189, 0.747), rgb(8, 4, 4));
+        color:linear-gradient(rgb(8, 4, 4),rgb(255, 251, 189));
+      }
+      div {
+            height: 200px;
+            background: linear-gradient(to right, #ffddd63b 20%, #fff9ed67 20%, #fff9ed65 80%, #dbdbdb60 80%)
+            ,url(/images/yalta.JPG);
+            transition-property: height, width, background-color;
+transition-duration: 3s;
+transition-timing-function: ease-in, ease, linear;
+          }
+      #flex1 {
+        background-color: rgba(255, 204, 0, 0.027);
+        color: beige;
+      }
+      .block1 { 
+         width: 200px; 
+         background: rgb(212, 21, 21);
+         padding: 30px;
+         padding-right: 20px; 
+         border: solid 10px rgb(21, 170, 81); 
+         float: none;
+         color: aqua;
+         position: sticky;
+      }
+      .block2 { 
+            width: 200px; 
+            background: #fc0; 
+            padding: 5px; 
+            border: solid 1px black; 
+            float: none ; 
+            position: relative;             
+        }
+      table {
+         width: 300; /* Ширина таблицы */ 
+         border-collapse: collapse; /* Убираем двойную рамку между ячейками */ 
+         background-color: whitesmoke;
+        }
+      th {
+          border: 2px solid firebrick ;
+          color: blue;
+          background-color: greenyellow;
+
+        }
+      td {
+         border: 2px solid green; /* Параметры границы */ 
+         padding: 5px; /* Поля в ячейке */ 
+        }
+      caption { 
+         border: 3px solid greenyellow;
+         background-color: aqua;
+         caption-side: bottom; /* Заголовок под таблицей */ 
+        }
+    </style>
+</head>
+<body>
+  <div>
+   <h1>Заголовок моей первой страницы.</h1> <br>
+   <a href="/index.html"> Домашняя страница </a> <br>
+   <a href="#aurum"> якорь </a> <br> <hr>
+   <a href="#table1"> Табличка задание </a> <br>
+   <a href="#flex1"> Flex-элементы </a><br>
+
+   <a href="#season1">Зима</a> <!--создаём якорь, указав #id элемента-->
+<a href="#season2">Весна</a>
+<a href="#season3">Лето</a>
+<a href="#season4">Осень</a>
+
+</div>
+
+  <a href="https://stepik.org/">Ссылка на курс</a> <br>
+  <img  src="https://astroproxy.com/img/astroproxy_og.png" width="250" alt="ебнуться как интересно">    
+    <div class="block1"> Почвообразовательный процесс физически 
+        иссушает монолит в полном соответствии</div>
+      <div class="block2"> Почвообразовательный процесс физически 
+            иссушает монолит в полном соответствии</div>
+    <hr>
+            <h2> Маркированный список тег "ul" </h2>
+    <ul>
+        <li> Пункт маркированного списка </li>
+        <li> второй пункт</li>
+        <li> третий пункт </li>
+    </ul>
+    <h2> Нумерованный список тэг "ol"</h2>
+    <p> Чтобы начать нумеровать список не с единицы, надо прописать атрибут "start" </p>
+    <p>Например, если для первого пункта списка задать <b> li value="10"</b>, то остальная нумерация будет пересчитана относительно нового значения.</p>
+    <ol>
+        <li> ну и ну </li>
+        <li> какая радость в жизни</li>
+        <li> пронумеровал все тут нафиг</li>
+    </ol>
+
+    <ol start="25">
+        <li> <b>ol start="25"</b> </li>
+        <li> какая радость в жизни</li>
+        <li> пронумеровал все тут нафиг</li>
+        <li> ну и ну </li>
+        <li> какая радость в жизни</li>
+        <li value="10"> пронумеровал все тут нафиг тут какраз li value="10"</li>
+        <li> ну и ну </li>
+        <li> какая радость в жизни</li>
+        <li> пронумеровал все тут нафиг</li>
+    </ol>
+    <hr>
+    <h3>Список определений</h3>
+    Состоит из трез тегов: <br>
+
+    <ol>
+        <li> <b> dl </b>(description list) - тег начала и конца списка </li>
+        <li> <b> dt</b> (term) - термин</li>
+        <li> <b> dd</b> (description) - определение</li>
+    </ol>
+    <dl>
+        <dt>Гаспачо</dt><dd>лёгкий холодный суп из перетёртых в пюре свежих овощей</dd>
+        <dt>Том-ям</dt><dd>кисло-острый суп на основе куриного бульона с креветками, курицей, рыбой или другими морепродуктами</dd>
+        <dt>Борщ</dt><dd>разновидность супа на основе свёклы, которая придаёт борщу характерный красный цвет</dd>
+    </dl>
+
+    <p><b><u>Таким-же образом спокойно делаются вложенные списки.</b></u></p>
+
+    <ul>
+        <li>Пункт 1.</li>
+        <li>Пункт 2.
+        <ul>
+        <li>Подпункт 2.1.</li>
+              <li>Подпункт 2.2.     
+              <ul>
+                <li>Подпункт 2.2.1.</li>
+                <li>Подпункт 2.2.2.</li>
+                </ul>
+              </li>          
+            <li>Подпункт 2.3.</li>
+          </ul>
+        </li>
+        <li>Пункт 3.</li>
+      </ul>
+      <p id="aurum">Такая разметка по умолчанию создаст для каждого вложенного списка новую нумерацию,<br>
+        начинающуюся с единицы. Чтобы сделать вложенную нумерацию, нужно использовать следующие свойства:<br>
+        <ul>
+            <li>counter-reset сбрасывает один или несколько счётчиков, задавая значение для сброса;</li>
+            <li>counter-increment задаёт значение приращения счётчика, т.е. с каким шагом будет нумероваться каждый последующий пункт;</li>
+            <li>content — генерируемое содержимое, в данном случае отвечает за вывод номера перед каждым пунктом списка.</li>
+        </ul>
+        </p>
+        <p>
+            ol {
+                counter-reset: section;<br>
+                /* Creates a new instance of the
+                section counter with each ol
+                element */
+                list-style-type: none;
+              } <br>
+              
+              li::before {<br>
+                counter-increment: section; <br>/* Increments only this instance
+                of the section counter */
+                <br>content: counters(section, ".") " ";
+                <br> /* Combines the values of all instances
+                of the section counter, separated
+                by a period */
+              }
+        </p>
+    <hr>
+    <p>Создаем список по образцу из задания</p>
+    <ul style="text-transform:uppercase;font-style: initial;color:red">
+        <li> Омлет 
+            <ol>
+                <li>Молоко</li>
+                <li>Яйца </li>
+            </ol>
+        </li>
+        <li> Блинчики
+            <ol>
+                <li>Молоко</li>
+                <li>Яйца</li>
+                <li>Мука</li>
+                <li>Сахар</li>
+                <li>соль</li>
+            </ol>
+        </li>
+        <li>Торт</li>
+    </ul>
+    <h2> Изображения </h2> <hr>
+    <ul>
+        <li> jpeg легче, но непрозрачный</li>
+        <li> PNG может быть прозачным, но весит больше </li>
+    </ul>
+
+    <img src="/images/yalta.JPG" alt="картиночка" width="300">  
+    <p> Если ты <img src="https://ucarecdn.com/b6f11528-661a-4200-8223-f4dc8b4d14b3/" alt="бибка"
+        width="100"> нюхай бэбру</p>
+        
+    <p> <img src="/images/yalta.JPG" alt="широкий" width="30%"> </p>
+
+    <video src="/images/2022-10-11 20-09-55.mkv" controls width="300" poster="/images/yalta.JPG"></video>
+
+    <audio controls >
+        <source src="name.ogg" type="audio/ogg">
+        <source src="/images/Queen - Another One Bites The Dust.mp3" type="audio/mpeg">
+        <a href="/images/Queen - Another One Bites The Dust.mp3">Скачать name.mp3</a>
+      </audio>
+
+      <h1>Времена года</h1>
+
+<h2>Оглавление</h2>
+
+
+<p style=letter-spacing:15px;text-align:right;color:red;font-size:20px; id="season1" >Зима́ — одно из четырёх времён года, между осенью и весной.
+Основной признак этого времени года — устойчивая низкая температура 
+(ниже 0 градусов по Цельсию) во многих районах Земли, на поверхность
+земли выпадает и ложится снег.</p> <!--добавляем соответствующий id элементу-->
+
+<p style=font-variant:ruby; id="season2">Весна́ — одно из четырёх времён года, переходный сезон
+    между зимой и летом. Слово имеет древнюю индоевропейскую основу и 
+    сродни лит. vasarà — «лето», латыш. pavasaris, др.-инд. 
+    vasantás — «весна», vasar — «рано».</p>
+
+<p id="season3">Лето - одно из четырёх времён года, между весной и осенью,
+    характеризующееся наиболее высокой температурой окружающей среды.
+    Состоит из трёх месяцев: в Северном полушарии — июня, июля и августа,
+    в Южном — декабря, января и февраля.</p>
+
+<p id="season4">Осень — одно из четырёх времен года, между летом и зимой.
+Осень — переходный сезон, когда заметно уменьшение светового дня, и 
+постепенно понижается температура окружающей среды.</p>     
+<table>
+        <caption>Пищевая ценность</caption>
+        <tr>
+          <th>Блюда</th>
+          <th>Калории</th>
+          <th>Жиры (г)</th>
+        </tr>
+        <tr>
+          <td>Куриный <br> бульон</td>
+          <td>120</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Салат <br> цезарь</td>
+          <td>400</td>
+          <td>26</td>
+        </tr>
+      </table> <hr>
+
+
+      <table id="table1">
+        <tr>
+          <th rowspan="3">Порции</th>
+          <td>Маленькая (150 г.)</td>
+        </tr>
+        <tr>
+          <td>Средняя (250 г.)</td>
+        </tr>
+        <tr>
+          <td>Большая (2400 г)</td>
+        </tr>
+      </table>
+
+<hr>
+
+<p id="flex1" sltyle="font-size:1,5em;font-style:b">Flex-элементы </p>
+
+</body>
+</html>

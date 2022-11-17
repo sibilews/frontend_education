@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Forms</title>
+</head>
+<body> 
+    <a style="color: red;" href="/index.html"> Домашняя страница</a> <br>
+    <a href="#train1"> Тренировка создания форм.</a> <br>
+    <hr>
+
+    <h2> Текстовое поле <b>texstarea rows cals</b> </h2>
+    <textarea rows="4" cols="50">
+        Озеро Байкал – огромное древнее озеро в горах Сибири к северу от монгольской границы. Байкал считается самым глубоким озером в мире. Он окружен сетью пешеходных маршрутов, называемых Большой байкальской тропой. Деревня Листвянка, расположенная на западном берегу озера, – популярная отправная точка для летних экскурсий. Зимой здесь можно кататься на коньках и собачьих упряжках.
+        </textarea>
+
+        <h1>Авторизация</h1>
+<form>
+  Имя пользователя
+  <br>
+  <input type="text" name="login" value="Лупа">
+  <br>
+  Пароль
+  <br>
+  <input type="password" name="password" value="Пупа">
+</form>
+<br>
+
+
+<p id="form1">
+<form>
+<input type="checkbox"><br>
+Флажок.<br>
+<input type="color"><br>
+Виджет для выбора цвета.<br>
+<input type="date"><br>
+Поле для ввода календарной даты (год, месяц, день).<br>
+<input type="datetime"><br>
+Поле для ввода даты и времени.<br>
+<input type="datetime-local"><br>
+Поле для ввода даты и местного времени.<br>
+<input type="email"><br>
+Поле для ввода адреса электронной почты.<br>
+<input type="file"><br>
+Поле для ввода имени файла, который пересылается на сервер.<br>
+<input type="hidden"><br>
+Скрытое поле (не отображается на Web-странице). Используется для технических целей, например, для того, чтобы передать на сервер системный идентификатор пользователя в системе.<br>
+<input type="image"><br>
+Графическая кнопка отправки данных формы на сервер. Вместе с этим значением нужно использовать атрибут src, чтобы определить адрес изображения и атрибут alt для определения альтернативного текста. Можно также задать атрибуты width и height, чтобы определить размер изображения в пикселях.<br>
+<input type="month"><br>
+Поле для ввода месяца и года.<br>
+<input type="number"><br>
+Поле для ввода чисел.<br>
+<input type="password"><br>
+Поле для ввода пароля.<br>
+<input type="radio"><br>
+Переключатели (радио-кнопки). Выбрать можно только один вариант.
+ Атрибут checked указывает, что вариант выбран по умолчанию.<br>
+<input type="range"><br>
+Ползунок для ввода чисел в указанном диапазоне.
+ Если соответствующие атрибуты не указаны, то значения по умолчанию:<br>
+<input type="search"><br>
+Поле для ввода строки поиска.<br>
+<input type="tel"><br>
+Поле для ввода номера телефона.<br>
+<input type="text"><br>
+Текстовое поле.<br>
+<input type="time"><br>
+Поле для ввода времени.<br>
+<input type="url"><br>
+Поле для ввода Web-адреса.<br>
+<input type="week"> <br>
+Поле для ввода номера недели и года.<br>
+</form>
+</p>
+
+<hr>
+<p id="selections1"> Выпадающие списки <br>
+    <p>Какая ваша любимая группа восьмидесятых?
+        <select name="EightiesFave">
+          <option value="1">The Cure</option>
+          <option value="2">Cocteau Twins</option>
+          <option value="3">Tears for Fears</option>
+          <option value="4">Thompson Twins</option>
+          <option value="5">Everything But the Girl</option> 
+          <option value="6">Depeche Mode</option>
+          <option value="7">The Smiths</option>
+          <option value="8">New Order</option>
+        </select>
+      </p>
+         Для отображения прокручиваемого списка укажите число видимых строк,
+         введя соответствующее значение атрибут <b>size</b>.<br>
+        Атрибут <b>multiple</b> позволяет пользователям выбрать более одного элемента в
+         списке. Обратите внимание, что раскрывающиеся 
+        списки не поддерживают атрибут <b>multiple</b>: когда браузер его встречает, он 
+        автоматически отображает прокручиваемый список. <br>
+        Указав в элементе <b>option</b> атрибут <b>selected</b>, вы сделаете его значением по 
+        умолчанию для данного списка. При загрузке страницы такие элементы будут выделены.
+         Атрибут <b>selected</b> можно указывать для обоих типов списков.
+        
+         <p>Какая ваша любимая группа восьмидесятых? <br>
+        <select name="EightiesFave" size="6" multiple>
+          <option value="1">The Cure</option>
+          <option value="2">Cocteau Twins</option>
+          <option value="3" selected="selected">Tears for Fears</option>
+          <option value="4" selected="selected">Thompson Twins</option>
+          <option value="5">Everything But the Girl</option> 
+          <option value="6">Depeche Mode</option>
+          <option value="7">The Smiths</option>
+          <option value="8">New Order</option>
+        </select>
+      </p> <br>
+      <h3> Кнопки ввода и сбоса данных</h3>
+      input type="reset" <br>
+      input type="submit" <br>
+      
+      <textarea  rows="10" cols="100">
+      Обе кнопки вставляются элементом input. 
+      Как упоминалось ранее, это единственные элементы формы,
+       для которых не нужно указывать атрибут name, поскольку 
+       они выполняют специальные функции, которые не подразумевают 
+       ввода каких-либо данных, однако, его можно добавить при
+       необходимости.
+
+       При помощи атрибута value вы можете изменить этот текст.
+    </textarea>
+       <br>
+
+
+       <h1>Форма авторизации</h1>
+<form>
+  Имя: <input type="text" name="login">
+  <br>
+  Пароль: <input type="password" name="password">
+  <br>
+  <input type="submit">
+  <input type="reset" value="Начать заново">
+</form>
+
+</p>
+
+    <h1 id="train1"> Тренировка создания форм.</h1>
+    <p> 
+        Задание:
+        <ul>
+            <li>поле для ввода текста</li>
+            <li>выпадающий список</li>
+            <li>чекбоксы</li>
+            <li>радио кнопки</li>
+            <li>поле ввода почты </li>
+            <li>поле ввода телефона</li>
+            <li>поле ввода пароля</li>
+            <li>кнопка "подтвердить"</li>
+            <li>кнопка "сброс"</li>
+        </ul>
+    </p>
+
+    <form>
+        <input type="text" maxlength="10" minlength="5" value="форма с текстом">
+    </form>
+    <select name="pipapirka"> 
+        <option selected> выпадающий список</option>
+        <optgroup label="optgroup">
+          <option> xs projekt</option>
+          <option> hustle</option>
+        </optgroup>
+        
+        <option> hardbass</option>
+        <option> fhurts</option>
+    </select> <br>
+
+
+    
+    
+</body>
+</html>

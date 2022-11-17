@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблички</title>
+    <style>
+        table {
+         width: 300; /* Ширина таблицы */ 
+         border-collapse: collapse; /* Убираем двойную рамку между ячейками */ 
+        }
+        td {
+         border: 2px solid green; /* Параметры границы */ 
+         padding: 5px; /* Поля в ячейке */ 
+        }
+        caption { 
+        border: 3px solid greenyellow;
+        background-color: aqua;
+         caption-side: bottom; /* Заголовок под таблицей */ 
+        }
+        </style>
+</head>
+<body>
+    <a href="/index.html"> Домашняя страница </a> <br>
+    <a href="#form1"> Примеры разных форм </a> <br>
+    <a href="#selections1"> Примеры списков </a> <br>
+    <table>
+        <caption>Команда 1</caption>
+        <tr>
+            <th>№</th>
+            <th>Ученик</th>
+            <th>Баллы</th>            
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Иванов</td>
+            <td>10</td>            
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Архипова</td>
+            <td>9</td> 
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Козлов</td>
+            <td>8</td> 
+        </tr>
+        <tr>
+            <td colspan="2">Итого</td>
+            <td>27</td>            
+        </tr>
+    </table>    
+</body>
+</html>
