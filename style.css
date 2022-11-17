@@ -3,28 +3,48 @@ body{background: #0F2027;  /* fallback for old browsers */
      background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
      background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
+
+/* Делает самый главный флекс с левой и правой колонкой */
+.flexmain{ 
+    display: flex;
+
+}
 header{
     width: 250px;
     background-color: rgba(240, 255, 255, 0.168);
+    border-radius: 10px;
 }
 nav{
-    display: flex;
-    justify-content: flex-start;
+    /* display: flex; */
+    position: sticky;
+    /* justify-content: flex-start; */
     width: 200px;
     color:black;
+    border: 3px;
+    border-radius: 20px;
 
 }
 main{
-    display: flex;
-    justify-content: flex-end;
-
+    /* display: flex; */
+    /* justify-content: flex-end; */
 }
 
-    p{color: rgb(0, 0, 0);}
+p{color: rgb(0, 0, 0);}
 
-    .main-header{color: rgb(214, 243, 234);
+.main-header{
+    position: sticky;
+    top: 0;
+    color: rgb(214, 243, 234);
     font-family: Arial, Helvetica, sans-serif;
     background: rgba(255, 255, 255, 0.133);
     /* margin-left: 20px; */
 
+}
+footer{
+    position: static;
+    bottom: 0;
+    left: 20px;
+    height: 150px;
+    background-image: linear-gradient(to bottom,rgb(0, 0, 0),rgba(38, 38, 38, 0.967) ,rgba(52, 52, 52, 0.605) ), url(/android-chrome-192x192.png);
+    background-size: 50px;
 }
