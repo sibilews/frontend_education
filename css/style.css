@@ -79,9 +79,10 @@ nav{
     color:black;
     border: 3px;
     border-radius: 20px;
-    text-transform: uppercase;
+    tab-size: 1em;
 }
 .nav-link{
+    text-transform: uppercase;
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(24, 26, 27);
@@ -90,7 +91,20 @@ nav{
 .nav-link:hover{
     color:rgb(90, 95, 50) ;
 }
-
+.nav-ul{
+    padding-left: 10px;
+}
+.nav-link-inner{
+    text-align: justify;
+    text-decoration:none;
+    font-family: Arial;
+    font-size: smaller;
+    color: rgb(24, 26, 27);
+    transition: color 0.2s linear;    
+}
+.nav-link-inner:hover{
+    color:rgb(90, 95, 50) ;
+}
 /* main{
     display: flex;
     justify-content: flex-end;
@@ -126,7 +140,7 @@ main{
     color: #0F2027;
     font-style: unset, bold;
     position:fixed;
-    bottom: 160px;
+    bottom: 10px;
     right: 10px; 
     text-transform: uppercase;
     transition: border-color 0.2s linear;
@@ -157,8 +171,12 @@ footer{
     bottom: 0;
     left: 20px;
     height: fit-content;
-    min-height: 160 px;
-    background-image: linear-gradient(to bottom,rgb(0, 0, 0),rgba(38, 38, 38, 0.967) ,rgba(52, 52, 52, 0.605) ), url(/android-chrome-192x192.png);
+    min-height: 60 px;
+    background-image: 
+        linear-gradient(to bottom,rgb(0, 0, 0),
+        rgba(38, 38, 38, 0.967) ,
+        rgba(52, 52, 52, 0.605) ),
+        url(/images/android-chrome-192x192.png);
     background-size: 50px;
     border-radius: 10px;
     display: flex;
@@ -167,6 +185,7 @@ footer{
 
 }
 .footer-p{
+    text-decoration: none;
     background-color: rgba(0, 0, 0, 0.587);
     padding: 10px;
     border-radius: 10px;
