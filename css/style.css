@@ -1,0 +1,177 @@
+
+
+body{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d3e5ed, #f4f8f9, #ededed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    max-height: fit-content;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    top: 0;
+    color: rgb(214, 243, 234);
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(104, 117, 136);
+}
+/* 
+
+    height: 5em;
+} */
+.header-navigation{
+    display: flex;
+}
+.header-navigation-git{
+    /* width: 5.1em; */
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background-image:url(/images/github-512.webp);
+    background-size:cover;
+    background-position: center;
+}
+.header-navigation-telegram{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin-right: 10px;
+    background-image:url(/images/Telegram.png);
+    background-size:cover;
+    background-position: center;
+}
+
+.header-navigation-a{
+    display: inline-block;
+    color: #0f202700;
+    width: inherit;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+/* Делает самый главный флекс с левой и правой колонкой */
+.flexmain-page-structure{ 
+    display: flex;
+}
+
+/*header{
+    width: 250px;
+    background-color: rgb(174, 212, 235);
+    border-radius: 10px;
+}*/
+nav{
+    /* display: flex; */
+    /* position: sticky; */
+    justify-content: flex-start;
+    background-color: #8ea5af;
+    width: 200px;
+    color:black;
+    border: 3px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.nav-link{
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(24, 26, 27);
+    transition: color 0.2s linear;    
+}
+.nav-link:hover{
+    color:rgb(90, 95, 50) ;
+}
+
+/* main{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+p{color: rgb(0, 0, 0);}
+
+
+main{
+    padding-left: 20px;
+}
+.container{
+    width: 100%;
+    max-width: 1000;
+    margin-right: 0;
+}
+/*.page-go-top {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}*/
+
+.go-up{
+    background-color: rgb(211, 211, 185);
+    border-radius: 3em;
+    border: solid 5px  #ededed;
+    width: 4em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    color: #0F2027;
+    font-style: unset, bold;
+    position:fixed;
+    bottom: 160px;
+    right: 10px; 
+    text-transform: uppercase;
+    transition: border-color 0.2s linear;
+}
+.go-up:hover{
+    border-color: #214758;
+}
+.nav-link-go-up{
+    display: inline-block;
+    width: inherit;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(24, 26, 27);
+    transition: color 0.2s linear;
+}
+
+.nav-link-go-up:hover{
+    color:rgb(90, 95, 50) ;
+}
+    
+    
+
+footer{
+    position: static;
+    bottom: 0;
+    left: 20px;
+    height: fit-content;
+    min-height: 160 px;
+    background-image: linear-gradient(to bottom,rgb(0, 0, 0),rgba(38, 38, 38, 0.967) ,rgba(52, 52, 52, 0.605) ), url(/android-chrome-192x192.png);
+    background-size: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.footer-p{
+    background-color: rgba(0, 0, 0, 0.587);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+    margin: 20px;
+    color: aliceblue;
+
+}
