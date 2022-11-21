@@ -1,3 +1,9 @@
+/*---------------------------------------------------------*/
+/* Main stylesheet. Contains Header,Footer,main structure. */
+/*---------------------------------------------------------*/
+
+/*Import unique styles for page Index.html*/
+@import url(/css/index.css);
 
 
 body{
@@ -5,13 +11,11 @@ body{
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #d3e5ed, #f4f8f9, #ededed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
-
 *,
 *:after,
 *:before {
     box-sizing: border-box;
 }
-
 header{
     display: flex;
     justify-content: space-between;
@@ -26,15 +30,10 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(104, 117, 136);
 }
-/* 
-
-    height: 5em;
-} */
 .header-navigation{
     display: flex;
 }
 .header-navigation-git{
-    /* width: 5.1em; */
     margin: 5px;
     width: 50px;
     height: 50px;
@@ -51,7 +50,7 @@ header{
     background-size:cover;
     background-position: center;
 }
-
+/*hyperlink for telegramm  and git buttons.*/
 .header-navigation-a{
     display: inline-block;
     color: #0f202700;
@@ -59,17 +58,10 @@ header{
     padding-top: 20px;
     padding-bottom: 15px;
 }
-
 /* Делает самый главный флекс с левой и правой колонкой */
 .flexmain-page-structure{ 
     display: flex;
 }
-
-/*header{
-    width: 250px;
-    background-color: rgb(174, 212, 235);
-    border-radius: 10px;
-}*/
 nav{
     /* display: flex; */
     /* position: sticky; */
@@ -105,28 +97,18 @@ nav{
 .nav-link-inner:hover{
     color:rgb(90, 95, 50) ;
 }
-/* main{
-    display: flex;
-    justify-content: flex-end;
-} */
-
-p{color: rgb(0, 0, 0);}
-
 
 main{
-    padding-left: 20px;
+    padding:5px 20px;   
+}
+p{color: rgb(0, 0, 0);
+text-align: justify;
 }
 .container{
     width: 100%;
     max-width: 1000;
     margin-right: 0;
 }
-/*.page-go-top {
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-}*/
-
 .go-up{
     background-color: rgb(211, 211, 185);
     border-radius: 3em;
@@ -136,7 +118,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 10px; */
     color: #0F2027;
     font-style: unset, bold;
     position:fixed;
@@ -159,13 +140,9 @@ main{
     color: rgb(24, 26, 27);
     transition: color 0.2s linear;
 }
-
 .nav-link-go-up:hover{
     color:rgb(90, 95, 50) ;
 }
-    
-    
-
 footer{
     position: static;
     bottom: 0;
@@ -192,5 +169,4 @@ footer{
     text-align: justify;
     margin: 20px;
     color: aliceblue;
-
 }
